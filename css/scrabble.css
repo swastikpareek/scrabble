@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Bubble Sharp';
+  src: url('../fonts/bubble_sharp.eot?') format('eot'), url('../fonts/bubble_sharp.woff') format('woff'), url('../fonts/bubble_sharp.ttf') format('truetype');
+}
+
+.small-box,
+.big-box{
+	background: white;
+	display: inline-block;
+	color : #577777;
+	font-size: 34px;
+	text-align: center;
+	font-family: "Bubble Sharp" , Arial , sans-serif;
+	border : 2px solid ;
+	width  : 40px;
+	height: 40px;
+	cursor: pointer;
+	position: relative;
+}
+.bigbox{
+	width : 44px;
+	height: 44px;
+}
+.ui-icon{
+	display: inline-block;
+	width : 10px;
+	height: 10px;
+	background: #577777 url(../images/cross.png) 50% 50% no-repeat;
+	background-size: 70%  70%;
+	font-size: 0px;
+	font-size: 0px;
+	color: transparent;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#container{
+	height: 44px;
+	text-align: left;
+}
+.randomise.focus{
+	-webkit-box-shadow:inset 3px 4px 0px #191366;
+	-moz-box-shadow:inset 3px 4px 0px #191366;
+	box-shadow:inset 3px 4px 0px #191366;
+}
+.check.focus{
+	-webkit-box-shadow: inset 3px 4px 0px #10180B;
+	-moz-box-shadow: inset 3px 4px 0px #10180B;
+	box-shadow: inset 3px 4px 0px #10180B;	
+}
+.randomise{
+	background: #4A3AFF;
+	top: 5px;
+	right:5px;
+	-webkit-box-shadow: 3px 4px 0px #191366;
+	-moz-box-shadow: 3px 4px 0px #191366;
+	box-shadow: 3px 4px 0px #191366;
+}
+.check{
+	background: #355435;
+	bottom: 5px;
+	right :5px;
+	-webkit-box-shadow: 3px 4px 0px #10180B;
+	-moz-box-shadow: 3px 4px 0px #10180B;
+	box-shadow: 3px 4px 0px #10180B;
+}
+.check.checking{
+	background: #D67821;
+}
+.check.checking.good{
+	background: #33CE45;
+}
+.check.checking.bad{
+	background: #D40D0D;
+}

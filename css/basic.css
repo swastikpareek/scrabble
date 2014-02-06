@@ -1,0 +1,127 @@
+body{
+	background : #efefef;
+	font-family: "Bubble Sharp" , Arial , sans-serif;
+}
+.page-wrapper{
+	display: table;
+	height: 100%;
+	margin : 0 auto;
+}
+#wrapper{
+	display: table-cell;
+	vertical-align: middle;
+	width: 500px;
+	height: 400px;
+}
+#header{
+	background : #ccc;
+	height: 100px;
+	width: 500px;
+	padding-top: 53px;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+	-webkit-transition : all 0.3s linear;
+	-moz-transition : all 0.3s linear;
+	-o-transition : all 0.3s linear;
+	transition : all 0.3s linear;
+}
+#header:after{
+	content: "";
+	background: #fff;
+	opacity: 0;
+	position: absolute;
+	top:  0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+#header.good{
+	background :#BDFCAE;
+}
+#header.bad{
+	background: #FCAEAE;
+}
+#header.bad:after,
+#header.good:after{
+	opacity: 0.9;
+	z-index: 10;
+}
+#footer{
+	background : #999;	
+	height: 100px;
+	padding-top: 53px;
+	width: 500px;
+	text-align: center;
+	position: relative;
+}
+.button{
+	cursor: pointer;
+	display: inline-block;
+	padding : 10px 15px;
+	font-weight: bold;
+	color:  white;
+	z-index: 15;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	position: absolute;
+}
+.clock-wrapper{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	border : 1px solid black;
+	top :20px;
+	left: 50px;
+}
+.clock{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../images/sand_clock.png) top left no-repeat;
+	background-size: contain;
+}
+.top-part{
+	position: absolute;
+	width:100%;
+	-webkit-transition : all 10s linear;
+	-moz-transition : all 10s linear;
+	-o-transition : all 10s linear;
+	transition : all 10s linear;
+}
+.bottom-part{
+	position: absolute;
+	width:100%;
+	-webkit-transition : all 10s;
+	-moz-transition : all 10s;
+	-o-transition : all 10s;
+	transition : all 10s;
+}
+.top-part{
+	bottom : 60px;
+	left:4px;
+	background: url(../images/sand_clock_top.png) bottom left no-repeat;
+	background-size: 120px;
+	height: 38%;
+}
+.bottom-part{
+	bottom : 11px;
+	left: 0px;
+	background: url(../images/sand_clock_bottom.png) top left no-repeat;
+	background-size: 120px;
+	height: 0%;
+}
+.top-part.animate{
+	height :0%;
+}
+.bottom-part.animate{
+	height :38%;
+}
+.counter{
+	border: 2px solid black;
+	padding : 5px 10px;
+	font-size: 34px;
+	text-align: center;
+}
